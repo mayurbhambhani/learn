@@ -40,6 +40,15 @@ app.get("/", (req, res) => {
         welcomeMsg: "Welcome Puny Human!!"
     })
 });
+
+
+//register a handler for get
+app.get("/projects", (req, res) => {
+    res.render("projects.hbs", {
+        header: "Projects Page",
+        welcomeMsg: "Welcome Puny Human!!"
+    })
+});
 app.get("/json", (req, res) => {
     // request has header, body, args user has sent
     // response is used to send response for data and statut codes.
